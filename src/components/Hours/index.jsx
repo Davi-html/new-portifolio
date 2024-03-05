@@ -1,6 +1,9 @@
 import { Container } from "./style";
 import React, { useRef, useEffect } from "react";
 
+import imgNoite from "../assets/noite.jpeg";
+import imgDia from "../assets/dia.jpeg";
+
 export function Hour() {
   const data = new Date();
   data.toLocaleString("pt-BR");
@@ -11,8 +14,6 @@ export function Hour() {
   const divData = useRef(null);
   
   useEffect(() => {
-    const imgDia = "../assets/dia.jpeg";
-    const imgNoite = "../assets/noite.jpeg";
     
     if(hora >= 0 && hora < 6){
       divRef.current.style.backgroundImage = `url(${imgNoite})`;
