@@ -1,0 +1,129 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  scrollbar-width: thin;
+  font-family: "Roboto", sans-serif;
+}
+
+.bg {
+  background: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 41%)), url(/src/assets/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  overflow-y: scroll;  
+}
+
+.container {
+  display: grid;
+  gap: 16px;
+  height: auto;
+  padding: 64px 12.8px 160px ;
+
+  grid-template-columns: 108px 1fr 1fr 1fr;
+
+  grid-template-areas: 
+    "div1 div1 div1 div1"
+    "div2 div3 div3 div3"
+    "div4 div3 div3 div3"
+    "div5 div5 div5 div5"
+    "div6 div6 div6 div6"
+    "div7 div7 div7 div7"
+    "div8 div8 div8 div8"
+    "div9 div9 div9 div9"
+  ;
+}
+
+.div4, .div6, .div7, .div8, .div9{
+  background-color: rgba(109, 40, 217, .2);
+  backdrop-filter: blur(12px);
+  border-radius: 8px;
+  height: 100px;
+  grid-area: div2;
+}
+
+.div3{
+  background-color: rgba(109, 40, 217, .2);
+  backdrop-filter: blur(12px);
+  border-radius: 8px;
+  width: 100%;
+  grid-area: div3;
+}
+.div4{
+  grid-area: div4;
+}
+.div6{
+  height: 340px;
+  grid-area: div6;
+}
+.div7{
+  height: 192px;
+  grid-area: div7;
+}
+.div8{
+  height: 192px;
+  grid-area: div8;
+}
+.div9{
+ height: 500px;
+  grid-area: div9;
+}
+
+.content-header {
+  text-align: center;
+  line-height: 1.25rem;
+
+  .desc h1 {
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+    text-shadow: 0 0 7px rgba(139,92,246,.6), 0 0 150px rgba(139,92,246,.6);    
+  }
+
+  #toWork{
+    opacity: .7;
+    font-size: .875rem;
+  }
+
+  .social {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+
+  }
+
+  .social img {
+    width: 30px;
+  }
+
+  hr {
+    margin: 15px auto;
+    width: 90%;
+  }
+
+  nav {
+    width: 100%;
+    padding: 6px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    margin-top: 30px;
+    text-shadow: 0 0 7px #f9a8d4, 0 0 150px #f9a8d4;
+    background-color: rgba(0, 0, 0, .2);
+    p{
+      opacity: .8;
+    }
+  }
+  
+}
+
+.header {
+  background-color: rgba(109, 40, 217, .2);
+  backdrop-filter: blur(12px);
+  border-radius: 8px;
+  grid-area: div1;
+}
