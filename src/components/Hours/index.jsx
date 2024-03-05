@@ -11,8 +11,8 @@ export function Hour() {
   const divData = useRef(null);
   
   useEffect(() => {
-    const imgDia = "../../assets/dia.jpeg";
-    const imgNoite = "../../assets/noite.jpeg";
+    const imgDia = "../assets/dia.jpeg";
+    const imgNoite = "../assets/noite.jpeg";
     
     if(hora >= 0 && hora < 6){
       divRef.current.style.backgroundImage = `url(${imgNoite})`;
