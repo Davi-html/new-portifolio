@@ -6,6 +6,7 @@ import github from '../assets/github.webp'
 import { Hour } from '../components/Hours'
 import { Light } from '../components/Light'
 import { Spotify } from '../components/Spotify'
+import { DivGit } from '../components/DivGit'
 
 export function App() {
   
@@ -30,10 +31,10 @@ export function App() {
                 <img src={github} alt="" />
               </div>
               <nav>
-                <p>HOME</p>
-                <p>PROJECTS</p>
-                <p>CONTACT</p>
-                <p>BLOG</p>
+                <a className='home' href=''>HOME</a>
+                <a className='projects' href=''>PROJECTS</a>
+                <a className='contact' href=''>CONTACT</a>
+                <a className='blog' href=''>BLOG</a>
               </nav>
             </div>
           </div> 
@@ -42,7 +43,7 @@ export function App() {
           <div className='div3'>3</div>
           <Spotify/>
           <div className='div6'>6</div>
-          <div className='div7'>7</div>
+          <DivGit/>
           <div className='div8'>8</div>
           <div className='div9'>9</div>
         </section>

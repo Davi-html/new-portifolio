@@ -36,9 +36,39 @@
     "div8 div8 div8 div8"
     "div9 div9 div9 div9"
   ;
+
+  @media(min-width: 640px){
+    grid-template-areas: 
+    "div1 div1 div1 div1"
+    "div2 div3 div3 div3"
+    "div4 div3 div3 div3"
+    "div5 div5 div5 div5"
+    "div6 div6 div7 div7"
+    "div6 div6 div8 div8"
+    "div9 div9 div9 div9"
+  ; 
+  }
+  
+  @media(min-width: 768px){
+    width: 768px;
+    margin: 0 auto;
+
+    .header {
+      width: 612px;
+    }
+
+    grid-template-areas: 
+    "div1 div1 div1 div2"
+    "div1 div1 div1 div4"
+    "div3 div3 div5 div5"
+    "div6 div6 div7 div7"
+    "div6 div6 div8 div8"
+    "div9 div9 div9 div9"
+  ; 
+  }
 }
 
-.div4, .div6, .div7, .div8, .div9{
+.div6, .div8, .div9{
   background-color: rgba(109, 40, 217, .2);
   backdrop-filter: blur(12px);
   border-radius: 8px;
@@ -53,17 +83,18 @@
   width: 100%;
   grid-area: div3;
 }
-.div4{
-  grid-area: div4;
-}
 .div6{
   height: 340px;
   grid-area: div6;
 }
-.div7{
-  height: 192px;
-  grid-area: div7;
+
+@media(min-width: 640px){
+  .div6 {
+    height: 100%
+  }
+; 
 }
+
 .div8{
   height: 192px;
   grid-area: div8;
@@ -114,16 +145,18 @@
     margin-top: 30px;
     text-shadow: 0 0 7px #f9a8d4, 0 0 150px #f9a8d4;
     background-color: rgba(0, 0, 0, .2);
-    p{
+    a{
+      text-decoration: none;
       opacity: .8;
+      cursor: pointer;
     }
   }
   
 }
 
 .header {
+  border-radius: 8px;
   background-color: rgba(109, 40, 217, .2);
   backdrop-filter: blur(12px);
-  border-radius: 8px;
   grid-area: div1;
 }

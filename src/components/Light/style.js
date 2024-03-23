@@ -6,6 +6,7 @@ export const Container = styled.div`
     border-radius: 8px;
     width: 108px;
     grid-area: div4;
+    height: 100px;
 
     display: flex;
     justify-content: center;
