@@ -40,7 +40,7 @@ export function App() {
           </div> 
           <Hour/>
           <Light/>
-          <div className='div3'>3</div>
+          <div className='div3'>3.</div>
           <Spotify/>
           <div className='div6'>6</div>
           <DivGit/>
