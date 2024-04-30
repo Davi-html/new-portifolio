@@ -1,5 +1,5 @@
 import { Container } from "./style";
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 import imgNoite from "../../assets/noite.jpeg";
 import imgDia from "../../assets/dia.jpeg";

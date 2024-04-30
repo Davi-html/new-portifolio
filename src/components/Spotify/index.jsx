@@ -51,7 +51,7 @@ export function Spotify() {
         </div>
       </div>
       <div className="content">
-        <img src={api.images?.url} className="img-album" />
+        <img src={api.images?.url} className="img-album"/>
         <div className="name">
           <h2 className="music">{api.title}</h2>
           <p className="artist">by {api.artists}</p>

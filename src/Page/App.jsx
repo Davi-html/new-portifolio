@@ -7,6 +7,7 @@ import { Hour } from '../components/Hours'
 import { Light } from '../components/Light'
 import { Spotify } from '../components/Spotify'
 import { DivGit } from '../components/DivGit'
+import { Map } from '../components/Map'
 
 export function App() {
   
@@ -40,7 +41,7 @@ export function App() {
           </div> 
           <Hour/>
           <Light/>
-          <div className='div3'>3.</div>
+          <Map/>
           <Spotify/>
           <div className='div6'>6</div>
           <DivGit/>
