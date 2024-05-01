@@ -31,6 +31,7 @@ export function Spotify() {
           artist.innerHTML = 'The Irrepressibles'
           album.innerHTML = 'From the Circus to te Sea, Pt.2 '
         }
+
         setApi(data);
       });
       

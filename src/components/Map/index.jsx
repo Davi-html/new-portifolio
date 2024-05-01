@@ -7,7 +7,7 @@ export function Map(){
         <Container className='div3'>
             <div className="img">
                 <img src={img} />
-                <p>📍 Brazil, Rio de Janeiro</p>
+                <p>📍 Rio de Janeiro, Brazil</p>
             </div>
         </Container>
     )

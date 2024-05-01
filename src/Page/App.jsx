@@ -8,6 +8,7 @@ import { Light } from '../components/Light'
 import { Spotify } from '../components/Spotify'
 import { DivGit } from '../components/DivGit'
 import { Map } from '../components/Map'
+import { MyTooltip } from '../components/Tooltip'
 
 export function App() {
   
@@ -45,7 +46,7 @@ export function App() {
           <Spotify/>
           <div className='div6'>6</div>
           <DivGit/>
-          <div className='div8'>8</div>
+          <MyTooltip/>
           <div className='div9'>9</div>
         </section>
       </div>
