@@ -12,6 +12,9 @@ import {
     SiTailwindcss,
     SiTypescript,
     SiVisualstudiocode,
+    SiLinux,
+    SiMysql,
+    SiPython,
 } from "react-icons/si";
 
 export function MyTooltip() {
@@ -33,6 +36,9 @@ export function MyTooltip() {
 
                 <a id="react"><SiReact /></a>
                 <Tooltip anchorSelect="#react">React</Tooltip>
+                
+                <a id="python"><SiPython /></a>
+                <Tooltip anchorSelect="#python">Python</Tooltip>
 
                 <a id="git"><SiGit /></a>
                 <Tooltip anchorSelect="#git">Git</Tooltip>
@@ -46,9 +52,19 @@ export function MyTooltip() {
                 <a id="mongo"><SiMongodb /></a>
                 <Tooltip anchorSelect="#mongo">MongoDB</Tooltip>
 
+                <a id="mysql"><SiMysql /></a>
+                <Tooltip anchorSelect="#mysql">Mysql</Tooltip>
+
                 <a id="docker"><SiDocker /></a>
                 <Tooltip anchorSelect="#docker">Docker</Tooltip>
                 
+                <a id="linux"><SiLinux /></a>
+                <Tooltip anchorSelect="#linux">Linux</Tooltip>
+            </div>
+
+            <div id="content">
+                <h1 id='content-h1'>MY STACK</h1>
+                <p id='contanet-p'>some of the technologies I use</p>
             </div>
 
         </Container>
