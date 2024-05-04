@@ -13,6 +13,10 @@ export const Container = styled.div`
 
     cursor: pointer;
 
+    a {
+        width: 100%;
+    }
+
     .git-icon{
         font-size: 30px;
         margin: 16px;

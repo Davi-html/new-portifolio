@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: white;
   scrollbar-width: thin;
+  scrollbar-color: #fdcfdf #f6f6f601;
   font-family: "Roboto", sans-serif;
 }
 
@@ -68,7 +69,7 @@
   }
 }
 
-.div6, .div8, .div9{
+.div6{
   background-color: rgba(109, 40, 217, .2);
   backdrop-filter: blur(12px);
   border-radius: 8px;
@@ -76,13 +77,7 @@
   grid-area: div2;
 }
 
-.div3{
-  background-color: rgba(109, 40, 217, .2);
-  backdrop-filter: blur(12px);
-  border-radius: 8px;
-  width: 100%;
-  grid-area: div3;
-}
+
 .div6{
   height: 340px;
   grid-area: div6;
@@ -93,15 +88,6 @@
     height: 100%
   }
 ; 
-}
-
-.div8{
-  height: 192px;
-  grid-area: div8;
-}
-.div9{
- height: 500px;
-  grid-area: div9;
 }
 
 .content-header {

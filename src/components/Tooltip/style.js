@@ -5,6 +5,12 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+    grid-area: div8;
+    height: auto;
+    background-color: rgba(109, 40, 217, .2);
+    backdrop-filter: blur(12px);
+    border-radius: 8px;
+
 
     .icons {
         display: grid;
