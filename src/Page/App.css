@@ -151,16 +151,20 @@
     width: 100%;
     padding: 6px 0;
     display: flex;
-    justify-content: end;
     align-items: center;
     gap: 13px;
-    margin-top: 45px;
     text-shadow: 0 0 7px #f9a8d4, 0 0 150px #f9a8d4;
     background-color: rgba(0, 0, 0, .2);
-    position: absolute;
-    top: 143px;
-    left: 0px;
-    text-align: center;
+    justify-content: center;
+
+    @media (width >= 768px) {
+      justify-content: end;
+      margin-top: 45px;
+      top: 143px;
+      left: 0px;
+      text-align: center;
+      position: absolute;
+    }
 
     a{
       text-decoration: none;
