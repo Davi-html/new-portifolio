@@ -21,6 +21,10 @@ export const Container = styled.div`
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         }
 
+        @media(width < 372px){
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
         gap: 16px;
     }
 
