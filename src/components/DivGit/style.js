@@ -6,7 +6,7 @@ export const Container = styled.div`
     height: 192px;
     grid-area: div7;
 
-    background-image: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 41%)), url('src/assets/github-background.webp') ;
+    background-image: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 41%)), url('../assets/github-background.webp') ;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
