@@ -20,6 +20,5 @@ export const Container = styled.div`
 
     p {
         color: rgba(251, 207, 232, .7);
-        
     }
 ` 

@@ -6,6 +6,8 @@
   scrollbar-width: thin;
   scrollbar-color: #fdcfdf #f6f6f601;
   font-family: "Roboto", sans-serif;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 .bg {
@@ -65,8 +67,30 @@
     "div6 div6 div7 div7"
     "div6 div6 div8 div8"
     "div9 div9 div9 div9"
-  ; 
+    ;
+
+    .foto-perfil {
+      display: flex;
+      width: 220px;
+      height: 220px;
+      opacity: .8;
+      z-index: 100;
+      -webkit-clip-path: polygon(0 0, 100% 0, 73% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 73% 100%, 0 100%);
+
+      img {
+        border-radius: 10px 0 0 10px;
+        width: 100%;
+        object-fit: cover;
+        
+      }
+    
+    }
   }
+}
+
+.foto-perfil {
+  display: none;
 }
 
 .div6{
@@ -92,7 +116,9 @@
 
 .content-header {
   text-align: center;
+  justify-content: center;
   line-height: 1.25rem;
+  display: flex;
 
   .desc h1 {
     font-size: 2.25rem;
@@ -125,19 +151,30 @@
     width: 100%;
     padding: 6px 0;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap: 13px;
-    margin-top: 30px;
+    margin-top: 45px;
     text-shadow: 0 0 7px #f9a8d4, 0 0 150px #f9a8d4;
     background-color: rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 143px;
+    left: 0px;
+    text-align: center;
+
     a{
       text-decoration: none;
       opacity: .8;
       cursor: pointer;
+      width: 100px;
     }
   }
   
+  .desc {
+    width: 100%;
+    height: 100%;
+  }
+
 }
 
 .header {
