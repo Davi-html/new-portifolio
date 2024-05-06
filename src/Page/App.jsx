@@ -1,4 +1,6 @@
 import './App.css'
+import { Link } from 'react-router-dom'
+
 import linkedin from '../assets/linkedin.webp'
 import instagram from '../assets/instagram.webp'
 import github from '../assets/github.webp'
@@ -36,10 +38,10 @@ export function App() {
                 </div>
                 <hr />
                 <nav>
-                  <a className='home' href='/'>HOME</a>
-                  <a className='projects' href=''>PROJECTS</a>
-                  <a className='contact' href='/contact'>CONTACT</a>
-                  <a className='blog' href=''>BLOG</a>
+                  <Link className='home' to='/'>HOME</Link>
+                  <Link className='projects' to=''>PROJECTS</Link>
+                  <Link className='contact' to='/contact'>CONTACT</Link>
+                  <Link className='blog' to=''>BLOG</Link>
                 </nav>
               </div>
             </div>
