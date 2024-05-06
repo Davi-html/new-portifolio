@@ -1,3 +1,4 @@
+
 *{
   padding: 0;
   margin: 0;
@@ -31,28 +32,10 @@
 
   grid-template-areas: 
     "div1 div1 div1 div1"
-    "div2 div3 div3 div3"
-    "div4 div3 div3 div3"
-    "div5 div5 div5 div5"
-    "div6 div6 div6 div6"
-    "div7 div7 div7 div7"
-    "div8 div8 div8 div8"
-    "div9 div9 div9 div9"
+    "form form form form"
   ;
-
-  @media(min-width: 640px){
-    grid-template-areas: 
-    "div1 div1 div1 div1"
-    "div2 div3 div3 div3"
-    "div4 div3 div3 div3"
-    "div5 div5 div5 div5"
-    "div6 div6 div7 div7"
-    "div6 div6 div8 div8"
-    "div9 div9 div9 div9"
-  ; 
-  }
   
-  @media(min-width: 768px){
+  @media(width >= 767px){
     width: 768px;
     margin: 0 auto;
 
@@ -63,10 +46,7 @@
     grid-template-areas: 
     "div1 div1 div1 div2"
     "div1 div1 div1 div4"
-    "div3 div3 div5 div5"
-    "div6 div6 div7 div7"
-    "div6 div6 div8 div8"
-    "div9 div9 div9 div9"
+    "form form form form"
     ;
 
     .foto-perfil {
@@ -91,27 +71,6 @@
 
 .foto-perfil {
   display: none;
-}
-
-.div6{
-  background-color: rgba(109, 40, 217, .2);
-  backdrop-filter: blur(12px);
-  border-radius: 8px;
-  height: 100px;
-  grid-area: div2;
-}
-
-
-.div6{
-  height: 340px;
-  grid-area: div6;
-}
-
-@media(min-width: 640px){
-  .div6 {
-    height: 100%
-  }
-; 
 }
 
 .content-header {
@@ -187,3 +146,70 @@
   backdrop-filter: blur(12px);
   grid-area: div1;
 }
+@media(width <= 767px) {
+  .hour, .light {
+    display: none;
+  }
+}
+
+.form{
+ grid-area: form;
+ height: auto;
+ padding: 1rem;
+ line-height: 1.25rem;
+ border-radius: .375rem;
+ background-color: rgba(109, 40, 217, .2);
+ backdrop-filter: blur(12px);
+
+ .input {
+    font-size: .875rem;
+    border-radius: .375rem;
+    width: 100%;
+    padding: .5rem;
+    background-color: rgba(226, 232, 240, .05);
+    margin-bottom: 1rem;
+    border: 1px solid #e5e7eb8c;
+    outline: 2px solid transparent;
+  }
+
+  .textarea {
+    font-size: .875rem;
+    border-radius: .375rem;
+    width: 100%;
+    height: 144px;
+    padding: .5rem;
+    background-color: rgba(226, 232, 240, .05);
+    margin-bottom: 1rem;
+    border: 1px solid #e5e7eb8c;
+    outline: 2px solid transparent;
+  }
+
+  .div-button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  .button {
+    background-color: rgba(226, 232, 240, .05);
+    padding: .5rem 1.25rem;
+    background-color: rgba(91, 33, 182, .3);
+    border-color: rgba(91, 33, 182, .1);
+    border-width: 1px;
+    border-radius: .375rem;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 700;
+    height: 44px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    margin-bottom: .25rem;
+    font-size: .875rem;
+  }
+
+
+}
+

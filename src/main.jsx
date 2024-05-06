@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { App } from './Page/App.jsx'
+import { Home } from './Page/Contact/Contact.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Home />
   </React.StrictMode>,
 )
