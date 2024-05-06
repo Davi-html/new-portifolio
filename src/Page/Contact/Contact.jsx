@@ -12,7 +12,7 @@ import pictureOfMe from "../../assets/me.jpeg";
 
 import { useState } from "react";
 
-export function Home() {
+export function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
