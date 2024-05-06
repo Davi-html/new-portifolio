@@ -18,7 +18,7 @@ export function Home() {
   return (
     <>
       <div className="bg">
-        <section className="container">
+        <section className="container-contact">
           <div className="header">
             <div className="img"></div>
             <div className="content-header">
@@ -39,18 +39,10 @@ export function Home() {
                 </div>
                 <hr />
                 <nav>
-                  <a className="home" href="">
-                    HOME
-                  </a>
-                  <a className="projects" href="">
-                    PROJECTS
-                  </a>
-                  <a className="contact" href="">
-                    CONTACT
-                  </a>
-                  <a className="blog" href="">
-                    BLOG
-                  </a>
+                  <a className="home" href="/">HOME</a>
+                  <a className="projects" href="">PROJECTS</a>
+                  <a className="contact" href="/contact">CONTACT</a>
+                  <a className="blog" href="">BLOG</a>
                 </nav>
               </div>
             </div>

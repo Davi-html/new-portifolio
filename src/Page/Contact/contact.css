@@ -22,7 +22,7 @@
   overflow-y: scroll;  
 }
 
-.container {
+.container-contact {
   display: grid;
   gap: 16px;
   height: auto;

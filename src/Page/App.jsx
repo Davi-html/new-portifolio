@@ -36,9 +36,9 @@ export function App() {
                 </div>
                 <hr />
                 <nav>
-                  <a className='home' href=''>HOME</a>
+                  <a className='home' href='/'>HOME</a>
                   <a className='projects' href=''>PROJECTS</a>
-                  <a className='contact' href=''>CONTACT</a>
+                  <a className='contact' href='/contact'>CONTACT</a>
                   <a className='blog' href=''>BLOG</a>
                 </nav>
               </div>
